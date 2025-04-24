@@ -90,7 +90,25 @@ const ResumeUpload = () => {
 
   return (
     <div className="max-w-4xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+    <div className=' flex justify-between items-center mb-4'>
       <h2 className="text-2xl font-bold mb-4">Upload Resume</h2>
+      <div>
+        {/* make select option for company and roles */}
+        <select className="border border-gray-300 rounded-md p-2">
+          <option value="company">Select Company</option>
+          <option value="Google">Google</option>
+          <option value="Amazon">Amazon</option>
+          <option value="TCS">TCS</option>
+        </select>
+
+        <select className="border border-gray-300 rounded-md p-2 ml-4">
+          <option value="role">Select Role</option>
+          <option value="SDE">SDE</option>
+          <option value="Data_science">Data Science</option>
+          <option value="DevOps">DevOps</option>
+        </select>
+      </div>
+    </div>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700">
